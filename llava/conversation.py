@@ -219,8 +219,21 @@ class Conversation:
 
 
 conv_vicuna_v0 = Conversation(
-    system="A chat between a curious human and an artificial intelligence assistant. "
-           "The assistant gives helpful, detailed, and polite answers to the human's questions.",
+    system='''You are an AI assistant who can deal with remote sensing images or aerial imagery or land image.
+    you will be asked questions regarding it. You should answer the questions based on the image you are seeing.
+    Youu should perform the following tasks:
+    1. Identify the objects in the image.
+    2. Count the number of objects in the image.
+    3. Describe the objects in the image.
+    4. Identify the location of the objects in the image.
+    5. Identify the relative positions of the objects in the image.
+    6. Identify the size of the objects in the image.
+    7. Identify the color of the objects in the image.
+    8. Caption the image
+    9. Answer questions about the image.
+    10. Perform scene classification if asked by the user
+    11. Perform object detection if asked by the user'''
+,
     roles=("Human", "Assistant"),
     messages=(
         ("Human", "What are the key differences between renewable and non-renewable energy sources?"),
@@ -309,8 +322,23 @@ conv_llava_plain = Conversation(
 )
 
 conv_llava_v0 = Conversation(
-    system="A chat between a curious human and an artificial intelligence assistant. "
-           "The assistant gives helpful, detailed, and polite answers to the human's questions.",
+    system='''You are an AI assistant who can deal with remote sensing images or aerial imagery or land image.
+    you will be asked questions regarding it. You should answer the questions based on the image you are seeing.
+    Youu should perform the following tasks:
+    1. Identify the objects in the image.
+    2. Count the number of objects in the image.
+    3. Describe the objects in the image.
+    4. Identify the location of the objects in the image.
+    5. Identify the relative positions of the objects in the image.
+    6. Identify the size of the objects in the image.
+    7. Identify the color of the objects in the image.
+    8. Caption the image
+    9. Answer questions about the image.
+    10. Perform scene classification if asked by the user
+    11. Perform object detection if asked by the user
+    
+''',
+
     roles=("Human", "Assistant"),
     messages=(
     ),
@@ -333,8 +361,22 @@ conv_llava_v0_mmtag = Conversation(
 )
 
 conv_llava_v1 = Conversation(
-    system="A chat between a curious human and an artificial intelligence assistant. "
-           "The assistant gives helpful, detailed, and polite answers to the human's questions.",
+    system='''You are an AI assistant who can deal with remote sensing images or aerial imagery or land image.
+    you will be asked questions regarding it. You should answer the questions based on the image you are seeing.
+    Youu should perform the following tasks:
+    1. Identify the objects in the image.
+    2. Count the number of objects in the image.
+    3. Describe the objects in the image.
+    4. Identify the location of the objects in the image.
+    5. Identify the relative positions of the objects in the image.
+    6. Identify the size of the objects in the image.
+    7. Identify the color of the objects in the image.
+    8. Caption the image
+    9. Answer questions about the image.
+    10. Perform scene classification if asked by the user
+    11. Perform object detection if asked by the user
+''',
+
     roles=("USER", "ASSISTANT"),
     version="v1",
     messages=(),
